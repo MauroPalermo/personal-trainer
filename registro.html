@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+</head>
+<body>
+
+    <form method=POST
+    action=registro>
+    <h1>Registro</h1>
+    <h2>Ingrese datos de registro</h2>
+    <br>
+    <p>Ingrese su usuario *</p>
+    <input type=text required name="usuario" placeholder="ID">
+    <br><br>
+    <p>Ingrese contraseña *</p> <!-- como hacer para repetir contraseña -->
+    <input type=password required name="password" placeholder="PASS">
+    <br>
+    <p>Repetir contraseña *</p>
+    <input type=password required name="password" placeholder="PASS">
+    <br><br>
+    <p>Ingrese mail *</p>
+    <input type=email required name="mail" placeholder="ejemplo@hotmil.com">
+    <br><br>
+    <p>Ingrese fecha de nacimiento y sexo *</p>
+    <input type=date required name="date" placeholder="18-100" min="18" max="100">
+    <select>
+        <option selected disabled>Sexo</option> <!-- no puedo dejar el option espaciado abajo -->
+        <option>Masculino</option>
+        <option>Femenino</option>
+        <option>Otro</option>
+    </select>
+    <br><br>
+    <button type="reset">Resetear</button>
+    <button type="submit">Registrar</button>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+</head>
+<body>
+    <h1>Contacto</h1>
+    <p>Página de contacto con nuestros directivos</p>
+
+    <br>
+    <h2>Vení a conocer nuestro centro de actividades</h2>
+    <p>Av. Hipólito Yrigoyen 2313, sede en Lanús</p>
+    <p>Fitz Roy 1348, sede en Palermo</p>
+
+    <br>
+    <h3>Llamanos a los números en pantalla</h3>
+    <p>Sede Lanús: 42416642</p>
+    <p>Sede Palermo: 42486643</p>
+   
+    <br>
+    <h4>Consultas</h4>
+    
+        <form method=POST
+        action=contacto> <!-- </form>? -->
+        <p>Nombre *</p>
+        <input type=text required name="nombre" placeholder="Nombre">
+        <p>Mail *</p>
+        <input type=email required name="date" placeholder="ejemplo@hotmil.com"> <!-- excluir mails -->
+        <p>Escoge la sede</p>
+        <select>
+            <option selected disabled>Escoge la sede</option> <!-- elegir si o si -->
+            <option>Lanús</option>
+            <option>Palermo</option>
+        </select>        
+        <br><br>
+        <p>Escriba su consulta *</p> <!-- rellenar campo si o si-->
+        <textarea rows="10" cols="50" name="consulta" required name="texto" placeholder="Escriba su consulta"></textarea>
+        <br>
+        <button type="reset">Resetear</button>
+        <button type="submit">Enviar</button>
+
+</body>
+</html>
